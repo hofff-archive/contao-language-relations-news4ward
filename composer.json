@@ -1,0 +1,42 @@
+{
+	"name": "hofff/contao-language-relations-news4ward",
+	"description": "Maintaining relations between translated news of the psi/news4ward Contao extension.",
+	"keywords": [ "utility", "translation", "news4ward", "contao" ],
+	"type": "contao-module",
+	"license": "LGPL-3.0+",
+	"homepage": "http://hofff.com/",
+	"authors": [
+		{
+			"name": "Oliver Hoff",
+			"email": "oliver@hofff.com",
+			"homepage": "http://hofff.com/",
+			"role": "Developer"
+		}
+	],
+	"config": {
+		"preferred-install": "dist"
+	},
+	"require": {
+		"php": "^5.5 || ^7.0",
+		"contao/core": "^3.5",
+		"contao-community-alliance/composer-plugin": "^2.0",
+		"hofff/contao-selectri": "^3.0",
+		"hofff/contao-language-relations": "^2.0",
+		"psi/news4ward": "^2.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"Hofff\\Contao\\LanguageRelations\\News4ward\\": "src/"
+		}
+	},
+	"extra": {
+		"contao": {
+			"sources": {
+				"contao-module": "system/modules/hofff_language_relations_news4ward"
+			},
+			"runonce": [
+				"runonce/dropViews.php"
+			]
+		}
+	}
+}
