@@ -1,5 +1,14 @@
 <?php
 
+if(
+	isset($GLOBALS['BE_MOD']['content']['news4ward']['stylesheet'])
+	&& is_string($GLOBALS['BE_MOD']['content']['news4ward']['stylesheet'])
+) {
+	$GLOBALS['BE_MOD']['content']['news4ward']['stylesheet'] = [
+		$GLOBALS['BE_MOD']['content']['news4ward']['stylesheet'],
+	];
+}
+
 $GLOBALS['BE_MOD']['content']['news4ward']['stylesheet'][]
 	= 'system/modules/hofff_language_relations/assets/css/style.css';
 
