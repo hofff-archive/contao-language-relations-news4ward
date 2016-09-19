@@ -17,4 +17,4 @@ $GLOBALS['TL_HOOKS']['loadDataContainer']['hofff_language_relations_news4ward']
 $GLOBALS['TL_HOOKS']['sqlCompileCommands']['hofff_language_relations_news4ward']
 	= [ 'Hofff\\Contao\\LanguageRelations\\News4ward\\Database\\Installer', 'hookSQLCompileCommands' ];
 $GLOBALS['TL_HOOKS']['hofff_language_relations_language_switcher']['hofff_language_relations_news4ward']
-	= [ 'Hofff\\Contao\\LanguageRelations\\News4ward\\LanguageRelationsNews', 'hookLanguageSwitcher' ];
+	= [ 'Hofff\\Contao\\LanguageRelations\\News4ward\\LanguageRelationsNews4ward', 'hookLanguageSwitcher' ];
