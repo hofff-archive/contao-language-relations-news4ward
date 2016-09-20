@@ -57,6 +57,7 @@ class LanguageRelationsNews4ward {
 			}
 
 			$article = ArticleModel::findByPk($relatedArticles[$rootPageID]);
+			$article->published = $article->status == 'published';
 			if(!ContaoUtil::isPublished($article)) {
 				continue;
 			}
